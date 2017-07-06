@@ -1,0 +1,7 @@
+.descriptionModule{
+  display: inline-block;
+  border: 2px solid red;
+  padding: 2%;
+  border-radius: 10px;
+color: #207cca;
+}

@@ -1,0 +1,63 @@
+<h1>NgIf Component 1</h1>
+<div>
+  <br>
+  <div class="descriptionModule">
+    Modification du texte avec la directive *ngIf,  *ngIf = '!visible' le texte disparait et le bouton change
+  </div>
+  <br>
+  <br>
+  <br/>
+  <p *ngIf='visible'>Cliquer sur bouton pour afficher ou cacher le texte </p>
+  <p *ngIf='!visible'>&nbsp;</p>
+</div>
+<button (click)='cacherTexte()'>{{texteBouton}}</button>
+<br/><br/>
+<h1>NgIf Component 2</h1>
+<br/>
+<br>
+<div class="descriptionModule">
+  Au clique sur un langage celui-ci change de tableau, si un tableau est vide, un message vous previent
+</div>
+<br>
+<br>
+<div class='container'>
+  <p>Cliquer sur langage pour ajouter à la liste de 'je veux apprendre'</p>
+  <br/>
+  <div class='row'>
+    <!-- Liste de cours -->
+    <div class='col-md-6'>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Langages Programmation</h4>
+        </div>
+        <div class="panel-body">
+          <ul *ngFor='let langage of langages let i=index'>
+            <li (click)='ajouterAListe(i)'>{{langage}}</li>
+          </ul>
+          <ul *ngIf='retournerCompte1() == 0'>
+            <li>la liste est vide</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Je veux apprendre -->
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>Je veux apprendre</h4>
+          </div>
+          <div class="panel-body" >
+            <ul *ngFor='let souhait of langageSelectionnes let i=index'>
+              <li (click)='retirerListe(i)'>{{souhait}}</li>
+            </ul>
+            <!-- si liste vide -->
+            <ul *ngIf='retournerCompte() == 0'>
+              <li>la liste est vide</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

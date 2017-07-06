@@ -1,0 +1,48 @@
+<h1>{{titre}}</h1>
+<br>
+<div class="descriptionModule">
+  5 modules simples propre a angular: fonction au clique, 2 way binding, affiche objet date, incrementation nombre
+</div>
+<br>
+<div class="module">
+<h2>1 - Exemple d'alert()</h2>
+<!-- exemple alert() -->
+<p>Cliquez le bouton</p>
+<button class="btn btn-info" (click)='onAlert()'>Cliquer sur boutton!</button>
+<br>
+</div>
+<div class="module">
+<!-- changer text avec évènement click-->
+<h2>2 - Changer Texte</h2>
+
+<p>{{texte}}</p>
+<button class="btn btn-info" (click)='onTextChange()'>Changer texte</button>
+<br>
+</div>
+<div class="module">
+<!-- afficher date du jour -->
+<h2>3 - Afficher Date</h2>
+<button  class="btn btn-info"(click)='showDate()'>Afficher Date</button>
+<br>
+<p>voici la date : {{date}}</p>
+
+</div >
+<div class="module">
+<!-- incrémenter avec évènement click-->
+<h2>4 - Incrémenter Nombre</h2>
+
+<p>{{nombre}} + {{nombre2}} = {{nombre3}}</p>
+<button  class="btn btn-info" (click)='incrementerNombre()'>Augmenter premier chiffre</button>
+<button  class="btn btn-info" (click)='incrementerNombre2()'>Augmenter deuxieme chiffre</button>
+<br>
+</div>
+
+<div class="module">
+<h2>5- two-way Binding</h2>
+  <!-- Formulaire -->
+    <form>
+      <input type="text" [(ngModel)]='texte2way' name='texte2way'>
+    </form>
+  <!-- 2-way binding -->
+  <p>ton texte : {{texte2way}}</p>
+</div>

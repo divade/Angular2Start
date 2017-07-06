@@ -1,0 +1,39 @@
+<h1>Currency Pipe</h1>
+<br>
+<div class="descriptionModule">
+  Ajout de la devise (ici euro) avec le pipe : | currency: 'EUR':true:'1.2'
+</div>
+<br>
+<br>
+<p>Je veux acheter :</p>
+
+<div>
+  <input type="text" name="nouveau" placeholder="livre.." [(ngModel)]='nouveau'>
+  <input type="number" placeholder="prix" [(ngModel)]='prix' name="prix">
+  <input type="submit" value="ajouter" (click)='ajouterListe(nouveau, prix)'>
+</div>
+
+<br>
+
+<table class="table table-bordered" style="width:60%" border=1>
+  <tr>
+    <th></th>
+    <th>Titre Livre</th>
+    <th>Prix</th>
+    <th></th>
+  </tr>
+
+  <tr *ngFor='let livre of livres let i=index'>
+    <td width='20'>{{i + 1}}</td>
+    <td>{{livre.nom | uppercase}}</td>
+    <td width='30'>{{livre.prix | currency: 'EUR':true:'1.2'}}</td>
+
+    <td width='18'><span (click)='supprimerListe(i)' style="texte-align:center">Supprimer</span></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td style="texte-align:right">Total :</td>
+    <td>{{calculerTotal() | currency: 'EUR':true:'1.2'}}</td>
+    <td></td>
+  </tr>
+</table>

@@ -1,0 +1,28 @@
+<h1>Date Pipe</h1>
+<br>
+<div class="descriptionModule">
+  Ajout de la date via le pipe Date et ses filtres : date: 'HH:mm le dd/MM/y
+</div>
+<br>
+<br>
+<h4>Je veux apprendre :</h4>
+<br>
+
+<div>
+  <input type="text" name="nouveau" placeholder="langage.." [(ngModel)]='nouveau' class="input-sm">
+  <input type="submit" value="ajouter" class="btn btn-default btn-sm" (click)='ajouterLangage(nouveau)'>
+</div>
+
+<br>
+
+<table class="table table-bordered" style="width:50%" border=1>
+  <tr *ngFor='let langage of langages let i=index'>
+    <td>{{i+1}}</td>
+    <td (click)='archiver(i)' [ngStyle]='setStyles(langage)'>{{langage.nom | uppercase}}</td>
+    <td><span class="label label-success" (click)='marquerImportant(i)' style="text-align:center">Y</span></td>
+    <td><span class="label label-danger" (click)='marquerPasImportant(i)' style='text-align:center'>X</span></td>
+    <!-- Date -->
+    <td>{{langage.date | date: 'HH:mm le dd/MM/y'}}</td>
+  </tr>
+
+</table>

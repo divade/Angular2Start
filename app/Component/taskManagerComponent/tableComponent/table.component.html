@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-8">
+    <table class="table table-bordered">
+      <!-- todo -->
+      <tr *ngFor='let todo of todos' [ngClass]='setClasses(todo)' (click)='OnSelected(todo)'>
+        <td width='55%'>{{todo.texte}}</td>
+        <td width='25%'>{{todo.date | date: 'dd - MM - y'}}</td>
+        <td width='25%'>{{todo.priority}}</td>
+        <td width='2%'><span class="label label-danger">X</span></td>
+      </tr>
+    </table>
+
+  </div>
+
+</div> <!-- row -->
+
+<div class="row" *ngIf='todoSelectionne'>
+  <div class="col-md-8">
+    <div class="well">
+
+      <h2>{{todoSelectionne.texte}}</h2>
+      <p><label>priorite : </label>{{todoSelectionne.priority}}</p>
+      <p>{{todoSelectionne.desc}}</p>
+    </div>
+  </div>
+</div>

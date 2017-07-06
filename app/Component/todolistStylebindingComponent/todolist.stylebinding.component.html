@@ -1,0 +1,13 @@
+<h1>to do list : Style binding</h1>
+<!-- formulaire -->
+<br>
+<div class="descriptionModule">
+  Changement du style au clique, si la proriete finish est true, style.text-decoration = line-through  (voir console)
+</div>
+<br>
+<br>
+<!-- liste taches -->
+<ul class='todolist' *ngFor='let langage of langages let i=index'>
+    <li (click)='surligner(i)' [style.text-decoration]="langage.finish ? ' line-through': 'none'"
+>{{langage.nom | uppercase}}</li>
+</ul>

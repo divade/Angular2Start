@@ -1,0 +1,17 @@
+ body{
+   padding-top: 100px;
+ }
+
+
+ /* priorities */
+ .faible{
+   background: transparent;
+ }
+
+ .moyenne{
+   background: rgba(255, 255, 0, 0.1);
+ }
+
+ .haute{
+   background: rgba(255, 0, 0, 0.1);
+ }

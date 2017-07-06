@@ -1,0 +1,11 @@
+<h1>to do list : class binding</h1>
+<br>
+<div class="descriptionModule">
+  Changement de class au clique, si la proriete finish est true ou false (voir console)
+</div>
+
+<br><br>
+<!-- liste taches -->
+<ul class='todolist' *ngFor='let langage of langages let i=index'>
+  <li (click)='surligner(i)' [class.surligner]='langage.finish ==true'>{{langage.nom}}</li>
+</ul>

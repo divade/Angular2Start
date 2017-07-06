@@ -1,0 +1,30 @@
+.module{
+  padding-top:2%;
+  padding-top: 2%;
+}
+
+.mainContainer{
+  text-align: center;
+  width: 100%;
+}
+
+.nav{
+  text-align: center;
+  height: 100%;
+  width:15em;
+  background-color: #1976D2;
+  color: rgb(227, 33, 33) !important;
+}
+
+.mainpage{
+  display: flex;
+}
+
+.btnExo1{
+  margin-top: 7%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 90%;
+  color: rgb(227, 33, 33) !important;
+
+}
