@@ -1,5 +1,4 @@
-# Angular 2 QuickStart Source
-[![Build Status][travis-badge]][travis-badge-url]
+# Angula2Start
 
 This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
 the foundation for most of the documentation samples and potentially a good starting point for your application.
@@ -14,11 +13,11 @@ Please keep that in mind before posting issues and PRs.
 
 ## Prerequisites
 
-Node.js and npm are essential to Angular 2 development. 
-    
+Node.js and npm are essential to Angular 2 development.
+
 <a href="https://docs.npmjs.com/getting-started/installing-node" target="_blank" title="Installing Node.js and updating npm">
 Get it now</a> if it's not already installed on your machine.
- 
+
 **Verify that you are running at least node `v4.x.x` and npm `3.x.x`**
 by running `node -v` and `npm -v` in a terminal/console window.
 Older versions produce errors.
@@ -75,7 +74,7 @@ npm start
 
 > `npm run typings -- install`
 
-The `npm start` command first compiles the application, 
+The `npm start` command first compiles the application,
 then simultaneously re-compiles and runs the `lite-server`.
 Both the compiler and the server watch for file changes.
 
