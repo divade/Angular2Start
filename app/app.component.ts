@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     //propriete
-    image:string[]=['app/image/angular.png'];
-    width:string='120';
-    height:string='120';
 
 
   //fonction

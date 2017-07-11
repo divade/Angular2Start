@@ -1,0 +1,35 @@
+.titreAcceuil{
+  padding-top:1% ;
+  margin-bottom: 5%;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btnExo1{
+  color: white;
+  background-color: rgb(159, 150, 158);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition-duration: 2s;
+}
+.btnComponent{
+  margin-right: 3%;
+  margin-left: 2%;
+  margin-bottom: 4%;
+
+}
+
+.btnExo1:hover{
+ -webkit-animation: pulse 1s ease-in-out 0s infinite alternate;
+ background-color: #1976D2;
+
+}
+
+@-webkit-keyframes pulse {
+        0%   {   transform: rotate(20deg); }
+        50%  {  transform: rotate(-20deg);}
+}

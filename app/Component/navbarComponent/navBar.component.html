@@ -1,0 +1,6 @@
+<div class='nav'>
+<img [src]='image' [width]='width' [height]='height'>
+<div class="btnComponent" *ngFor='let btncomponent of boutonsComponent let i = index'>
+<button class="btnExo1" routerLink={{btncomponent.routerLink}} routerLinkActive='active' > {{btncomponent.name}}</button>
+</div>
+</div>

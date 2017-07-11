@@ -11,6 +11,7 @@ import {currencyPipeComponent} from './Component/currencypipeComponent/currencyp
 import {datePipeComponent} from './Component/datePipeComponent/datePipe.component';
 import {taskManagerComponent} from './Component/taskManagerComponent/taskmanager.component';
 
+
 const appRoutes : Routes = [
 {
   path:'',
@@ -22,7 +23,7 @@ const appRoutes : Routes = [
 },
 {
   path:'smallModule',
-  component: petitModuleComponent
+  component: petitModuleComponent,
 },
 {
   path: 'Carousel',

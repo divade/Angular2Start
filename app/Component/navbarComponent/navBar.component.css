@@ -1,0 +1,16 @@
+.nav{
+  text-align: center;
+  height: auto;
+  width:10em;
+  background-color: #1976D2;
+  color: rgb(227, 33, 33) ;
+  padding-bottom: 7%;
+}
+.btnExo1{
+  margin-top: 7%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  width: 90%;
+  color: rgb(227, 33, 33) !important;
+
+}

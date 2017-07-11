@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 
 export class CarrouselComponent{
 
-
+  
       //propriete
     images : string[]=['app/image/goku.png','app/image/goku1.jpg','app/image/goku2.jpg','app/image/goku3.jpg','app/image/goku4.jpg',];
     image :string = this.images[0];

@@ -14,6 +14,9 @@ import {datePipeComponent} from './Component/datePipeComponent/datePipe.componen
 import {taskManagerComponent} from './Component/taskManagerComponent/taskmanager.component';
 import {AppFormulaireComponent} from './Component/taskManagerComponent/formulaireComponent/formulaire.component';
 import {AppTableComponent} from './Component/taskManagerComponent/tableComponent/table.component';
+import {navBarComponent} from './Component/navbarComponent/navBar.component';
+import {buttonAlert} from './Component/petitmoduleComponent/buttonAlert/buttonAlert';
+import {textChange} from './Component/petitmoduleComponent/textChange/textChange';
 import { AppComponent }  from './app.component';
 import{routing} from './app.routing';
 
@@ -33,7 +36,10 @@ import{routing} from './app.routing';
      datePipeComponent,
      taskManagerComponent,
      AppFormulaireComponent,
-     AppTableComponent
+     AppTableComponent,
+     navBarComponent,
+     buttonAlert,
+     textChange
     ],
   bootstrap: [ AppComponent ]
 })

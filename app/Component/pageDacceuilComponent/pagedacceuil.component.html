@@ -1,1 +1,8 @@
-<h1>Bienvenue sur l'atelier Angular 4 </h1>
+<div class="module1">
+<h1 class="titreAcceuil">{{titreAcceuil}}</h1>
+</div>
+<div class="container">
+<div class="btnComponent" *ngFor='let btncomponent of boutonsComponent let i = index'>
+  <button class="btnExo1" routerLink={{btncomponent.routerLink}} routerLinkActive='active' > {{btncomponent.name}}</button>
+</div>
+</div>
