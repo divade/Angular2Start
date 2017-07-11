@@ -5,6 +5,7 @@
   background-color: #1976D2;
   color: rgb(227, 33, 33) ;
   padding-bottom: 7%;
+  position :fixed;
 }
 .btnExo1{
   margin-top: 7%;
